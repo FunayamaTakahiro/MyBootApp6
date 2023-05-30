@@ -1,4 +1,4 @@
-package jp.te4a.spring.boot.mybootapp6;
+package jp.te4a.spring.boot.mybootapp7;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
