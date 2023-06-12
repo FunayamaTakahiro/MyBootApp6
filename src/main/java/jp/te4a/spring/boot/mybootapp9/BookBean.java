@@ -1,15 +1,23 @@
-package jp.te4a.spring.boot.mybootapp8;
+package jp.te4a.spring.boot.mybootapp9;
 
-
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+
+@Entity
+@Table(name = "books")
 @Data
+@AllArgsConstructor
 @NoArgsConstructor
-public class BookForm {
+public class BookBean {
+	@Id
+	@GeneratedValue
 	private Integer id ;
+	@Column(nullable = false)
 	private String title;
 	private String writter;
 	private String publisher;
 	private Integer price;
 }
+
