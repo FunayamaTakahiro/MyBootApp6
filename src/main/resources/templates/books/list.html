@@ -4,10 +4,11 @@
 		<meta charset="UTF-8" />
 		<title>書籍登録一覧画面</title>
 		<link rel="stylesheet" type="text/css" href="../../static/css/style.css"th:href="@{/css/style.css}"/>
+		<link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/3.3.7/css/bootstrap.min.css}" />
 	</head>
 	<body>
 		<form th:action="@{/books/create}" th:object="${bookForm}" method="post">
-		<table>
+		<table class="table table-striped talbe-bordered table-condensed">
 			<tr>
 				<td>タイトル:</td>
 				<td>
@@ -20,6 +21,7 @@
 				<td>
 					<input type="text" name="writter" th:field="*{writter}" th:errorclass="errorinput" />
 					<span th:if="${#fields.hasErrors('writter')}" th:errors="*{writter}" class="error-messages">error!</span>
+					<p>*今回は著者を「東北タロウ」に指定してください。<p>
 				</td>
 			</tr>
 			<tr>
@@ -33,7 +35,7 @@
 					<span th:if="${#fields.hasErrors('price')}" th:errors="*{price}" class="error-messages">error!</span>
 				</td>
 			</tr>
-		</table>
+		</tableclass="table table-striped talbe-bordered table-condensed">
 		<input type="submit" value="作成" />
 		</form>
 		<hr /> 
