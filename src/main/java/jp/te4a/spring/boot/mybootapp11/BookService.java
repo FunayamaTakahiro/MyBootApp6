@@ -1,4 +1,4 @@
-package jp.te4a.spring.boot.mybootapp10;
+package jp.te4a.spring.boot.mybootapp11;
 
 import java.util.ArrayList;
 import java.util.List;

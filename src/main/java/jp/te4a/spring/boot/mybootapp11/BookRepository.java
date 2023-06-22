@@ -1,4 +1,4 @@
-package jp.te4a.spring.boot.mybootapp10;
+package jp.te4a.spring.boot.mybootapp11;
 import org.springframework.stereotype.Repository;
 import java.util.List;
 import org.springframework.data.jpa.repository.JpaRepository;
